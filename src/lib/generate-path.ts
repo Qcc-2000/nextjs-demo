@@ -10,7 +10,6 @@ export function generatePath(realPath: string, relativePath: string): string[] {
   if (!fs.statSync(realPath).isDirectory()) return res;
 
   if (!containPageFile(realPath)) return res;
-  console.log(realPath, relativePath);
   res.push(relativePath);
   const entries = fs.readdirSync(realPath);
   entries.forEach((entry) => {

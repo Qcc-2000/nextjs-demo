@@ -25,7 +25,6 @@ export default function ButtonFetch() {
     });
   console.log(data);
   const isEmpty = data?.[0]?.length === 0;
-
   const isReachingEnd =
     isEmpty || (data && data[data.length - 1]?.length < LIMIT);
   const isLoadingMore =

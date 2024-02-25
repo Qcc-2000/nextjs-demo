@@ -54,7 +54,6 @@ export default function ScrollFetch() {
   );
 }
 
-function UI() {}
 function Item(album: Album) {
   return (
     <div className="p-4 border border-red-400">
